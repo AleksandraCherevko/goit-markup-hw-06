@@ -439,26 +439,26 @@
           </ul>
         </div>
         <!--FOOTER MODAL-->
+        <div class="footer-modal">
+          <h3 class="modal-subscribe">Subscribe</h3>
+          <form class="footer-form">
+            <label for="user-email" class="input-email">Email</label>
+            <input
+              type="email"
+              class="footer-modal-input"
+              name="user-email"
+              id="user-email"
+              placeholder="E-mail"
+            />
 
-        <form class="footer-form">
-          <label for="user-email">Email</label>
-          <input
-            type="email"
-            class="footer-modal-input"
-            name="user-email"
-            id="user-email"
-            placeholder="E-mail"
-          />
-          <div class="footer-modal-icon">
-          <button class="footer-modal-button btn" type="submit">
-            Subscribe
-          </button>
-          <svg class="footer-form-icon" width="24" height="20">
-            Subscribe
-            <use href="./images/icons.svg#icon-send"></use>
-          </svg>
-          </div>
-        </form>
+            <!--FOOTER MODAL BUTTON-->
+            <button class="footer-modal-button" type="submit">
+              Subscribe<svg class="footer-modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--BACKDROP-->
@@ -524,9 +524,29 @@
               ></textarea>
             </div>
 
-            <button class="modal-button slogan-button btn" type="submit">
-              Send
-            </button>
+            <!--CHECKBOX-->
+            <div class="modal-field">
+              <input
+                type="checkbox"
+                name="privacy"
+                id="privacy"
+                value="true"
+                class="input-check visually-hidden"
+              />
+              <label for="privacy" class="check-text"
+                ><span>
+                  <svg class="check-icon" width="10" height="8">
+                    <use href="./images/icons.svg#icon-agree-icon"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a class="privacy-link" href="">Privacy Policy</a></label
+              >
+            </div>
+            <!--BUTTON-->
+            <div class="check-box-button">
+              <button class="check-button" type="submit">Send</button>
+            </div>
           </div>
         </form>
       </div>
