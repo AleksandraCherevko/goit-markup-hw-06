@@ -294,6 +294,8 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+
+
 /*-----FORMS--------*/
 .modal-title {
 font-weight: 500;
@@ -454,24 +456,43 @@ display: block;
 max-width: 453px;
 min-height: 80px;
 
+
 }
 
-.footer-form {
+.modal-subscribe{
+margin-bottom: 16px;
+
+color: #ffffff;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+
+}
+.footer-form-modal {
   display: inline-flex;
-  gap: 24px;
-
 
 }
+
 .footer-modal-input {
+  margin-right: 24px;
 background-color: transparent;
 border: 1px solid rgba(255, 255, 255, 0.3);
 border-radius: 4px;
 width: 264px;
 height: 40px;
+padding-left: 34px;
+outline: none;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-modal-input:hover,
+.footer-modal-input:focus {
+  border-color: var(--accent-color);}
 
 .footer-modal-button {
+padding-top: 8px;
+padding-left: 24px;
 width: 165px;
 height: 40px;
 display: inline-flex;
@@ -487,8 +508,14 @@ color: #FFFFFF;
 background: #4D5AE5;
 border-radius: 4px;
 border: none;
-}
+cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.footer-modal-button:hover,
+.footer-modal-button:focus {
+    background-color: #404bbf;
+}
 .footer-modal-icon {
   margin-left: 16px;
   margin-right: 24px;
@@ -723,24 +750,6 @@ border-radius: 4px;
 
 /*-----FOOTER SOCIAL MEDIA--------*/
 
-.modal-subscribe {
-display: inline-block;
-margin-bottom: 16px;
-text-align: center;
-color: #ffffff;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-}
-
-.footer-modal {
-display: block;
-width: 453px;
-height: 80px;
-}
-
-
 
 .footer-social-media-title {
   margin-bottom: 8px;
@@ -769,7 +778,7 @@ height: 80px;
   align-items: center;
   justify-content: center;
   transition:
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-media-icon {
